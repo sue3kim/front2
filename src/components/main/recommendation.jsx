@@ -40,7 +40,7 @@ const Recommendation = () => {
   console.log("navigated : ", required_info);
 
   const onRecommend = async () => {
-    const baseURL = "http://rollforward.xyz:3001/api/nutrition/recommend/";
+    const baseURL = "http://3.36.48.172:8000/admin/";
     try {
       const response = await fetch(baseURL, {
         method: "POST",
