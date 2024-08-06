@@ -1,0 +1,94 @@
+@import url(./mainDefult.css);
+
+.foodMain{
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+.prevBtnFood{
+    width: 80%;
+   /*  background: #333; */
+    height: 10%;
+    line-height: 600%;
+    font-weight: 520;
+    font-size: 14px;
+}
+
+.foodMain > .searchContainer{
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 5px 6px 6px rgba(0,0,0,0.2);
+    height: 7%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+.searchContainer > input{
+    width: 85%;
+    height: 100%;
+    border: none;
+}
+.searchContainer > button{
+    width: 40px;
+    height: 100%;
+    border: none;
+    background: none;
+}
+.searchContainer > button > span{
+    color: #666;
+}
+
+.foodMain > .resultContainer{
+    width: 80%;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 5px 6px 6px rgba(0,0,0,0.2);
+    height: 80%;
+}
+.resultContainer > .tabs{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 10%;
+    background: #ededed47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+.resultContainer > .tabs > button{
+    width: 33%;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 12px;
+}
+.resultContainer > .tabs > .allBtn, .resultContainer > .tabs >.bookmarkBtn{
+    border-right: 1px solid #ccc;
+}
+.resultContainer > .tabs .active{
+    border-bottom: 2px solid #5cc1a0; /* 수정 필요 */
+}
+
+
+.resultContainer > ul{
+    width: 100%;
+    height: 90%;
+   /*  border: 1px solid #333; */
+}
+.foodResultBox > li{
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+
+.foodName{
+    display: flex;
+    align-items: center;
+}
+.foodName > .gram {
+    font-size: 10px;
+    color: #888;   
+}

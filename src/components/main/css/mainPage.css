@@ -1,0 +1,254 @@
+@import url(./mainDefult.css);
+.mainContainer{
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    position: relative;
+}
+.mainContainer > section {
+    width: 80%;
+    padding: 13px 5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 5px 6px 6px rgba(0,0,0,0.2);
+}
+
+.mainContainer > section >h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+.h3Txt{
+    display: flex;
+}
+.h3Txt::before{
+    display:inline-block;
+    content: '';
+    width: 5px;
+    height: 17px;
+    background: #5cc19f86;
+    border-radius: 2px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+#inputSection{
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#inputSection > h3{
+   /*  background: #ededed; */
+    width: 90%;
+    height: 15%;
+}
+#inputSection > .innerBox{
+    width: 80%;
+    height: 85%;
+    background: #fff;
+}
+.innerBox > .inputBox{
+    width: 100%;
+    background: #fff;
+    height: 52%;
+}
+
+.inputBox > p {
+    width : 100%;
+    height: 14%;
+   /*  background: #fff; */
+    font-size: 12px;
+    color: #383838;
+    border-bottom : 1px solid #d0d0d0;
+    padding-bottom : 2px;
+}
+.inputBox > .inputBtnContent{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+.inputBox > .inputBtnContent > .inputTxt{
+    width: 50%;
+    font-size: 13px;
+    font-weight: 400;
+}
+.inputBox > .inputBtnContent > .inputIcon{
+    width: 50%;
+    height: 147px;
+    background: url("../img/input_img.png") no-repeat center;
+}
+
+
+.innerBox > .caloriesBox{
+    width: 100%;
+    height: 47%;
+    /* background: #888; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.caloriesBox > div{
+    width: 100%;
+    height: 20%;
+    border-bottom : 1px solid #d0d0d0;
+    padding-bottom : 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caloriesBox > div > p{
+    font-size: 12px;
+    color: #383838;
+}
+.caloriesBox > div > .refreshBtn{
+    border: none;
+    width: 24px;
+    height: 100%;
+    background: none;
+    margin-right: 8px;
+}
+.caloriesBox > div > .refreshBtn > span{
+    color: #4c4c4c;
+    width: 80%;
+    height: 100%;
+}
+
+.caloriesBox > ul{
+    height: 50%;
+    padding: 5px 0 2px;
+    display: flex;
+
+}
+.caloriesBox > ul > li {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caloriesBox > ul > li > p{
+    font-size: 12px;
+    height: 40%;
+    
+}
+.caloriesBox > ul > li > p:nth-of-type(2){
+    font-size: 10px;
+    font-weight: 500;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    line-height: 250%;
+    border-right: 1px solid #d0d0d0;
+}
+.caloriesBox > ul > li:nth-of-type(4) > p:nth-of-type(2){
+    border: none;
+}
+.caloriesBox > p{
+    width: auto;
+    height: 20%;
+    font-size: 10px;
+    color: #6666;
+}
+
+
+
+.mainContainer > #analysisSection{
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 0 5px;
+}
+#analysisSection > h3{
+    width: 90%;
+    height: 20%;
+    font-size: 13px;
+    line-height: 13px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5cc1a0;
+}
+#analysisSection > ul{
+    margin: 0 auto;
+    width: 88%;
+    height: 79%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#analysisSection > ul > li{
+    width: 50%;
+    height: 48%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.caloriesContent, .carbsContent{
+    border-bottom: 1px solid #d0d0d0;
+}
+.caloriesContent , .proteinContent{
+    border-right: 1px solid #d0d0d0;
+}
+#analysisSection > ul > li > p{
+    font-size: 11px;
+}
+#analysisSection > ul > li > p:nth-of-type(2){
+    margin-left: 9%;
+}
+.itemTxt::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #00d991;
+    margin: 0 10px; 
+}
+.carbsTxt::before{
+    background: #5cb5c1;
+}
+.proteinTxt::before{
+    background: #5cc1a0;
+}
+.fatTxt::before{
+    background: #abdecd;
+}
+
+/* #analysisSection > ul > p {
+    font-size: 10px;
+    color: #6666;
+}
+ */
+
+
+#recommendationSection{
+    height: 8%;
+    
+}
+#recommendationSection > a{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+#recommendationSection > a > h3{
+    width: 235px;
+    font-size: 14px;
+    font-weight: 500;
+}
+#recommendationSection > a > span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #5a5a5a;
+    width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000;
+  overflow: hidden;
+}
+
+body {
+  /* background: linear-gradient(0deg, #5CC1A0 -3%, #B5E7E3 10%, #E9F8F7 18%, #fff 100%); */
+  /* background: linear-gradient(0deg, #82C8C3 -3%, #B5E7E3 10%, #E9F8F7 18%, #fff 100%); */
+}
+
+.container {
+  background: linear-gradient(
+    0deg,
+    #82c8c3 -3%,
+    #b5e7e3 10%,
+    #e9f8f7 18%,
+    #fff 100%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+.logoBox {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+}
+.logoBox > span {
+  background: url(./icon/logo_big.svg);
+  width: 112px;
+  height: 93px;
+  margin-top: 120px;
+}
+
+.loginBox {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.loginBox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginBox > .loginTxt {
+  font-weight: bold;
+}
+.ID,
+.password {
+  width: 80%;
+  height: 50px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.idTxt,
+.pwdTxt {
+  height: 60%;
+  /* text-align: center; */
+  padding: 0 8% 0 6%;
+  line-height: 30px;
+  border-right: 1px solid #b5b5b5;
+  font-size: 15px;
+}
+
+.idInput,
+.pwdInput {
+  height: 100%;
+  width: 84%;
+  border-width: 0;
+  border-radius: 10px;
+}
+
+.loginBtn {
+  margin: 8px 0 15px;
+  width: 80%;
+  height: 50px;
+  background: #000000;
+  border-radius: 13px;
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.loginIcon {
+  background: url(./icon/sign_up_icon.png);
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.loginTxt {
+  color: #fff;
+  font-size: 15px;
+}
+.signupBtn {
+  background: none;
+  border: none;
+}
+.signupBtn > a {
+  color: #393939;
+  font-size: 14px;
+}
+
+/* #landscape{
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    color: #333;
+    font-size: 20px;
+}
+
+@media screen and (max-width:646px){
+    #landscape{
+        display:none;
+    }
+}
+
+@media screen and (min-width:645px){
+    body{
+        background: #fff;
+    }
+    section,header{
+        display: none;
+    }
+} */
